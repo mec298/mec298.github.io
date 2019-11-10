@@ -1,0 +1,85 @@
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+body{
+  font-family: 'Libre Franklin', sans-serif;
+  /* R:181 G:53 B:145 */
+  font-weight: 300;}
+
+img{
+  width: 300px;
+}
+main {
+  background-color: #FAF3E7;
+  width: 910px;
+  padding: 20px;
+  height: auto;
+  margin-top: 10px;
+  margin-right: auto;
+  margin-bottom: 20px;
+  margin-left: auto;
+  border-style: solid;
+  border-color: #f6d7d4;
+  border-width: 40px;
+}
+
+#title2 {
+  text-align: center;
+  color: #FF0080;
+}
+
+#mainpic{
+  width: 600px;
+
+}
+
+#main{
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+
+}
+
+#Ingredientslist {
+  background-color: #88D1F1;
+  color: #FFFFFF;
+}
+
+#Preparationlist{
+  background-color: #88D1F1;
+  color: #FFFFFF;
+}
+
+#Preparation {
+  color: #88D1F1;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+#Ingredients{
+  color: #88D1F1;
+  text-align: center;
+  font-size: 50px;
+}
+
+#pictures{
+  color: #88D1F1;
+  text-align: center;
+  font-size: 50px;
+
+}
+
+#zoom{
+  color: #2F639D;
+}
+
+#title{
+  color: #6BA259;
+}
+
+#credits{
+  color: #6BA259;
+  text-decoration: none;
+
+}

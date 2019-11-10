@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Plugins Example</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <style media="screen">
+      img{
+        width: 300px;
+      }
+
+      .char1{
+        color: red;
+      }
+
+      .char6{
+        font-family: sans-serif;
+      }
+
+      #words3{
+        font-size: 20px;
+
+      }
+    </style>
+  </head>
+
+
+
+  <body>
+    <!-- Step 1: Jquery Script link -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<!-- Step 2: plugin Script link -->
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+<a data-fancybox="gallery" href="https://farm1.staticflickr.com/620/21313565474_3df45f02d9_b.jpg"><img src="https://farm1.staticflickr.com/620/21313565474_3df45f02d9_b.jpg"></a>
+<a data-fancybox="gallery" href="https://live.staticflickr.com/3031/2760159467_28fa727d72_b.jpg"><img src="https://live.staticflickr.com/3031/2760159467_28fa727d72_b.jpg"></a>
+
+
+<!--Step 2: lettering Script link  -->
+<script type="text/javascript" src="jquery.lettering-0.6.1.min.js"></script>
+<script>
+	  $(document).ready(function() {
+	    $(".fancy_title").lettering();
+	  });
+
+    $(document).ready(function() {
+	    $("#words").lettering();
+	  });
+
+
+</script>
+
+<h1 class="fancy_title">Some Title</h1>
+<p id="words">this is split into words</p>
+<p id="sentence">this is split by the break tag</p>
+
+
+
+
+  </body>
+</html>
