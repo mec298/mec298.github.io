@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Intro to javascript</title>
+  </head>
+  <body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="text/javascript" src="js/Jquery.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        // when the document is ready run the action below
+        // single line of coment
+
+        // .css function - what goes inside the parenthesis is called paramenter - ingredients for particular recipe
+        $("h1").css("color","orange");
+        $("#underline").css("text-decoration", "underline");
+        $(".blue").css("background-color","blue");
+        //the .html fuction changes the text inside of an html element - will use this when you hover an image or text on a website
+        $("#changeText").html("This text was changed");
+
+
+
+      });
+    </script>
+    <h1>Turn Orange</h1>
+    <h1>This is also Orange</h1>
+    <h2 id="underline">This is Underline</h2>
+    <ul>
+      <li class="blue">1</li>
+      <li class="blue">2</li>
+      <li class="blue">3</li>
+    </ul>
+    <p id="changeText">This text is awesome!</p>
+
+
+
+  </body>
+</html>

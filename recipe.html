@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Fudgy Brownies</title>
+    <style media="screen">
+    </style>
+    <link rel="stylesheet" href="js/recipe.css">
+    <link rel="stylesheet" href="js/chocolat.css" type="text/css" media="screen" charset="utf-8">
+  </head>
+  <body>
+    <header>
+
+    </header>
+    <main>
+      <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script> -->
+
+      <h1 id="title">FUDGY BROWNIES</h1>
+      <h1 id="title2">CUPCAKE EDITION</h1>
+
+
+
+      <section id="main">
+        <img id="mainpic" src="recipe/recipe17.jpg" alt="placeholder">
+        <p id="maintext">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </section>
+
+      <h2 id="zoom">Visually-impaired friendly!</h2>
+
+      <p id="addinfo"></p>
+
+      <h2 id="Ingredients">Ingredients</h2>
+
+
+      <section id="Ingredientslist">
+      <ul>
+        <li>8 oz good-quality chocolate, semi-sweet</li>
+        <li>12 tablespoons butter, melted</li>
+        <li>1 ¼ cups sugar</li>
+        <li>2 eggs</li>
+        <li>2 teaspoons vanilla extract</li>
+        <li>¾ cup all-purpose flour</li>
+        <li>¼ cup cocoa powder</li>
+        <li>1 teaspoon salt</li>
+      </ul>
+    </section>
+
+
+    <h2 id="Preparation">Preparation</h2>
+
+
+    <section id="Preparationlist">
+    <ol>
+      <li>Preheat the oven to 350°F (180°C). Line a cupcake pan with cupcake tins.</li>
+      <li>Chop the chocolate into chunks. Melt half of the chocolate in the microwave in 20-second intervals, saving the other half for later.</li>
+      <li>In a large bowl, mix the butter and sugar with an electric hand mixer, then beat in the eggs and vanilla for 1-2 minutes, until the mixture becomes fluffy and light in color.</li>
+      <li>Whisk in the melted chocolate (make sure it's not too hot or else the eggs will cook), then sift in the flour, cocoa powder, and salt. Fold to incorporate the dry ingredients, being careful not to overmix as this will cause the brownies to be more cake-like in texture.</li>
+      <li>Fold in the chocolate chunks, then transfer the batter to the cupcake tins.</li>
+      <li>Bake for 20-25 minutes, depending on how fudgy you like your brownies, then cool completely.</li>
+      <li>Serve with a nice cold glass of milk!</li>
+      <li>Enjoy!</li>
+    </ol>
+  </section>
+
+<h2 id="pictures">Images</h2>
+<section>
+  <div class="chocolat-parent" data-chocolat-title="set title">
+    <a class="chocolat-image" href="recipe/recipe2.jpg" title="p1">
+        <img width="100" src="recipe/recipe2.jpg" />
+    </a>
+    <a class="chocolat-image" href="recipe/recipe3.jpg" title="p2">
+        <img width="100" src="recipe/recipe3.jpg" />
+    </a>
+    <a class="chocolat-image" href="recipe/recipe5.jpg" title="p3">
+        <img width="100" src="recipe/recipe5.jpg"/>
+    </a>
+    <a class="chocolat-image" href="recipe/recipe7.jpg" title="p4">
+        <img width="100" src="recipe/recipe7.jpg"/>
+    </a>
+    <a class="chocolat-image" href="recipe/recipe10.jpg" title="p5">
+        <img width="100" src="recipe/recipe10.jpg" />
+    </a>
+    <a class="chocolat-image" href="recipe/recipe16.jpg" title="p6">
+        <img width="100" src="recipe/recipe16.jpg"/>
+</div>
+</section>
+
+<section id="credits">
+  <h1>By Maria Eugenia Cisneros</h1>
+</section>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script src="circletype.min.js"></script>
+  <script type="text/javascript" src="js/jquery.chocolat.js"></script>
+
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+
+//PLUGINS
+      $("#title").fitText(1.5);
+      $("#title2").fitText(2.5);
+
+      new CircleType(document.getElementById('title'))
+  .radius(500);
+
+    $('.chocolat-parent').Chocolat();
+
+
+//NORMAL JQUERY
+      $("#Ingredientslist").hide(function(){
+      });
+
+      $("#Ingredients").click(function(){
+        $("#Ingredientslist").toggle(1000);
+      });
+
+      $("#Preparationlist").hide(function(){
+      });
+
+      $("#Preparation").click(function(){
+        $("#Preparationlist").toggle(1000);
+      });
+
+      $("#Ingredientslist").dblclick(function(){
+        $("#Ingredientslist").css("font-size","40px");
+      });
+
+      $("#Preparationlist").dblclick(function(){
+        $("#Preparationlist").css("font-size","40px");
+      });
+
+     $("#maintext").mouseenter(function(){
+       $("#zoom").show();
+    });
+
+      $("#zoom").hover(function(){
+        $("#addinfo").html("This site is Visually-impaired friendly, to get the ingredients list or preparation steps to enlarge, just double click on them!");
+        $("#addinfo").css("font-size","30px");
+      });
+
+    });
+
+
+  </script>
+
+
+
+</body>
+</main>
+</html>
