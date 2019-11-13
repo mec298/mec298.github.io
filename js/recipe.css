@@ -1,4 +1,5 @@
 
+
 @import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
 body{
   font-family: 'Libre Franklin', sans-serif;
@@ -28,7 +29,7 @@ main {
 }
 
 #mainpic{
-  width: 600px;
+  width: 700px;
 
 }
 
@@ -43,17 +44,20 @@ main {
 #Ingredientslist {
   background-color: #88D1F1;
   color: #FFFFFF;
+  padding: 20px;
 }
 
 #Preparationlist{
   background-color: #88D1F1;
   color: #FFFFFF;
+  padding: 20px;
 }
 
 #Preparation {
   color: #88D1F1;
   text-align: center;
   font-size: 50px;
+
 
 }
 
